@@ -6,13 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        x:
-          - 1
-          - 2
-        y:
-          - 1
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,9 +18,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install openscad freebsd-buildutils
 
-      - name: Set environment variables
-        run: |
-
       - name: Build STL files
         run: |
-          fmake XY_FLAGS='-D num_x=${{ matrix.x }} -D num_y=${{ matrix.y }}'
+          MATRIX_X="1 2 3"
+          MATRIX_Y="1 2 3"
+          for X in ${MATRIX_X}; do
+            for Y in ${MATRIX_Y}; do
+              fmake XY_FLAGS="-D num_x=${X} -D num_y=${Y}"
+              mv drawer.stl ${X}x${Y}_drawer.stl
+              mv house.stl ${X}x${Y}_house.stl
+            done
+          done
+          ls *.stl
