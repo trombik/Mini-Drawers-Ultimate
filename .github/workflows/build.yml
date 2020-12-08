@@ -26,7 +26,9 @@ jobs:
             for Y in ${MATRIX_Y}; do
               fmake XY_FLAGS="-D num_x=${X} -D num_y=${Y}"
               mv drawer.stl ${X}x${Y}_drawer.stl
+              mv drawer.png ${X}x${Y}_drawer.png
               mv house.stl ${X}x${Y}_house.stl
+              mv house.png ${X}x${Y}_house.png
             done
           done
-          ls *.stl
+          ls *.stl *.png
