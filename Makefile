@@ -11,10 +11,10 @@ OPENSCAD_BIN?=   openscad
 all:	drawer.stl house.stl
 
 drawer.stl: ${WRKSRC}/drawer.scad
-	env OPENSCADPATH=${OPENSCADPATH} ${OPENSCAD_BIN} ${OPENSCAD_DRAWER_FLAGS} -o ${.TARGET} ${WRKSRC}/drawer.scad
+	env OPENSCADPATH=${OPENSCADPATH} ${OPENSCAD_BIN} --render ${OPENSCAD_DRAWER_FLAGS} -o ${.TARGET} ${WRKSRC}/drawer.scad
 
 house.stl: ${WRKSRC}/house.scad
-	env OPENSCADPATH=${OPENSCADPATH} ${OPENSCAD_BIN} ${OPENSCAD_HOUSE_FLAGS} -o ${.TARGET} ${WRKSRC}/house.scad
+	env OPENSCADPATH=${OPENSCADPATH} ${OPENSCAD_BIN} --render ${OPENSCAD_HOUSE_FLAGS} -o ${.TARGET} ${WRKSRC}/house.scad
 
 clean:
 	rm -f drawer.stl house.stl
