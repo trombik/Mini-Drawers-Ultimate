@@ -1,10 +1,10 @@
 ---
-name: Build examples
+name: Build STL files
 on:
   - pull_request
   - push
 jobs:
-  build_1x1:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
