@@ -8,15 +8,17 @@ OPENSCAD_DRAWER_FLAGS?= ${XY_FLAGS} ${MAGNET_FLAGS} -D use_label=false -D use_nu
 OPENSCAD_HOUSE_FLAGS?=  ${XY_FLAGS} ${MAGNET_FLAGS} -D house_wall_thickness_b=2 -D house_depth=57 -D stopper_height=1.5
 OPENSCAD_BIN?=   openscad
 
-all:	drawer.stl house.stl
+TARGETS=	drawer.stl drawer.png house.stl house.png
 
-drawer.stl: ${WRKSRC}/drawer.scad
+all:	${TARGETS}
+
+drawer.stl drawer.png: ${WRKSRC}/drawer.scad
 	env OPENSCADPATH=${OPENSCADPATH} ${OPENSCAD_BIN} --render ${OPENSCAD_DRAWER_FLAGS} -o ${.TARGET} ${WRKSRC}/drawer.scad
 
-house.stl: ${WRKSRC}/house.scad
+house.stl house.png: ${WRKSRC}/house.scad
 	env OPENSCADPATH=${OPENSCADPATH} ${OPENSCAD_BIN} --render ${OPENSCAD_HOUSE_FLAGS} -o ${.TARGET} ${WRKSRC}/house.scad
 
 clean:
-	rm -f drawer.stl house.stl
+	rm -f ${TARGETS}
 
 # vim: noexpandtab
