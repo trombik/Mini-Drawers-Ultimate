@@ -193,7 +193,7 @@ module oval(w,h, height, center = false) {
 }
 
 module chamferOval(w,h, height) {
-  scale([1, h/w, 1]) chamferCylinder(height, w, w, .4, 360,1);
+  scale([1, h/w, 1]) chamferCylinder(height, w, w, .4, .4, 360);
 }
 
 
