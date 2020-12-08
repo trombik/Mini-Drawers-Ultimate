@@ -30,4 +30,4 @@ jobs:
 
       - name: Build STL files
         run: |
-          fmake XY_FLAGS='-D num_x=${{ x }} -D num_y=${{ y }}'
+          fmake XY_FLAGS='-D num_x=${{ matrix.x }} -D num_y=${{ matrix.y }}'
