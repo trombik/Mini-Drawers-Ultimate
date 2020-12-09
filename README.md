@@ -64,7 +64,7 @@ do not use the `Makefile`.
 ## Tips
 
 When the runner of house is not printed well, try 0% infill. The infill often
-creates nonuniform shape. Without infill, the strength is just enough.
+creates nonuniform shape. Even without infill, the strength is just enough.
 
 Bad shaped runner can be fixed by a small electric drill and carving bits.
 
