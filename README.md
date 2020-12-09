@@ -60,3 +60,13 @@ do not use the `Makefile`.
 
 When the runner of house is not printed well, try 0% infill. The infill often
 creates nonuniform shape. Without infill, the strength is just enough.
+
+Be sure to avoid stringing. Stringing produces bad prints. See [Cura
+Retraction Settings: How to Avoid Stringing](https://all3dp.com/2/cura-retraction-settings-how-to-avoid-stringing/).
+
+In addition custom retraction settings, disabling combing in Travel setting
+produces better results. See [Travel settings](https://support.ultimaker.com/hc/en-us/articles/360012611299-Travel-settings).
+
+Layer hight should be 0.2 mm. 0.1 mm layer hight produces better prints, but
+unacceptably long to print. For example, 2x2 house takes 7 hours with 0.1 mm,
+3.5 hours with 0.2 mm.
