@@ -55,3 +55,8 @@ The command above creates `house.stl`, `house.png`, `drawer.stl`, and
 
 If the defaults do not work for you, `make` variables can be overridden. Or,
 do not use the `Makefile`.
+
+## Tips
+
+When the runner of house is not printed well, try 0% infill. The infill often
+creates nonuniform shape. Without infill, the strength is just enough.
