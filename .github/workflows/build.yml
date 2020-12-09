@@ -16,25 +16,23 @@ jobs:
         run: |
           sudo add-apt-repository ppa:openscad/releases
           sudo apt-get update
-          sudo apt-get install openscad freebsd-buildutils
+          sudo apt-get install openscad freebsd-buildutils xvfb
 
       - name: Build STL files
 
-        # XXX use xvfb-action here because OpenSCAD cannot export images
+        # XXX use xvfb-run here because OpenSCAD cannot export images
         # without X server.
         # https://github.com/openscad/openscad/issues/1798
-        uses: GabrielBB/xvfb-action@v1
-        with:
-          run: |
-            MATRIX_X="1 2 3"
-            MATRIX_Y="1 2 3"
-            for X in ${MATRIX_X}; do
-              for Y in ${MATRIX_Y}; do
-                fmake XY_FLAGS="-D num_x=${X} -D num_y=${Y}"
-                mv drawer.stl ${X}x${Y}_drawer.stl
-                mv drawer.png ${X}x${Y}_drawer.png
-                mv house.stl ${X}x${Y}_house.stl
-                mv house.png ${X}x${Y}_house.png
-              done
+        run: |
+          MATRIX_X="1 2 3"
+          MATRIX_Y="1 2 3"
+          for X in ${MATRIX_X}; do
+            for Y in ${MATRIX_Y}; do
+              xvfb-run --auto-servernum fmake XY_FLAGS="-D num_x=${X} -D num_y=${Y}"
+              mv drawer.stl ${X}x${Y}_drawer.stl
+              mv drawer.png ${X}x${Y}_drawer.png
+              mv house.stl ${X}x${Y}_house.stl
+              mv house.png ${X}x${Y}_house.png
             done
-            ls *.stl *.png
+          done
+          ls *.stl *.png
