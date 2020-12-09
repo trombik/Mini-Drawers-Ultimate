@@ -62,6 +62,8 @@ do not use the `Makefile`.
 When the runner of house is not printed well, try 0% infill. The infill often
 creates nonuniform shape. Without infill, the strength is just enough.
 
+Bad shaped runner can be fixed by a small electric drill and carving bits.
+
 Be sure to avoid stringing. Stringing produces bad prints. See [Cura
 Retraction Settings: How to Avoid Stringing](https://all3dp.com/2/cura-retraction-settings-how-to-avoid-stringing/).
 
