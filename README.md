@@ -40,7 +40,8 @@ make XY_FLAGS="-D num_x=2 -D num_y=1"
 ```
 
 The command above creates `house.stl`, `house.png`, `drawer.stl`, and
-`drawer.png`. As `OpenSCAD` cannot export images, X server is required.
+`drawer.png`. As `OpenSCAD` cannot export images without X screen, X server is
+required.
 
 ## Defaults
 
