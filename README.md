@@ -16,6 +16,7 @@ version.  The code should be managed in Version Management System.
 
 - openscad
 - BSD make (optional, not GNU make)
+- X server (optional)
 
 ## Usage
 
@@ -37,3 +38,6 @@ If you want 2x1 version, then:
 ```console
 make XY_FLAGS="-D num_x=2 -D num_y=1"
 ```
+
+The command above creates `house.stl`, `house.png`, `drawer.stl`, and
+`drawer.png`. As `OpenSCAD` cannot export images, X server is required.
