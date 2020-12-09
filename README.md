@@ -63,6 +63,10 @@ do not use the `Makefile`.
 
 ## Tips
 
+The drawer is very easy to print. The house is more difficult. PLA works fine.
+
+Use magnets. They are cheap, and you will appreciate them.
+
 When the runner of house is not printed well, try 0% infill. The infill often
 creates nonuniform shape. Even without infill, the strength is just enough.
 
