@@ -77,3 +77,14 @@ produces better results. See [Travel settings](https://support.ultimaker.com/hc/
 Layer hight should be 0.2 mm. 0.1 mm layer hight produces better prints, but
 unacceptably long to print. For example, 2x2 house takes 7 hours with 0.1 mm,
 3.5 hours with 0.2 mm.
+
+## Authors
+
+- [Trevor Moseley](https://www.thingiverse.com/trevm/designs) (all the work)
+- [Tomoyuki Sakurai](https://github.com/trombik) (repository maintenance and
+  CI)
+
+## License
+
+[Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+See [LICENSE](LICENSE) for details.
