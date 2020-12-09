@@ -54,7 +54,7 @@ required.
 - No slot partition. It does not make sense because 1) the partitioned space
   is too small for anything, 2) it would be hard to find parts when one drawer
   has multiple parts.
-- Magnet hole is 10 mmm diameter and 1 mm thickness, which is commonly
+- Magnet hole is 10 mm diameter and 1 mm thickness, which is commonly
   available.
 - One handle per drawer
 
