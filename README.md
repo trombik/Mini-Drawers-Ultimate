@@ -41,3 +41,17 @@ make XY_FLAGS="-D num_x=2 -D num_y=1"
 
 The command above creates `house.stl`, `house.png`, `drawer.stl`, and
 `drawer.png`. As `OpenSCAD` cannot export images, X server is required.
+
+## Defaults
+
+- Drawer and house have drop-in magnet holes. Removing them does not save much
+  space.
+- No slot partition. It does not make sense because 1) the partitioned space
+  is too small for anything, 2) it would be hard to find parts when one drawer
+  has multiple parts.
+- Magnet hole is 10 mmm diameter and 1 mm thickness, which is commonly
+  available.
+- One handle per drawer
+
+If the defaults do not work for you, `make` variables can be overridden. Or,
+do not use the `Makefile`.
