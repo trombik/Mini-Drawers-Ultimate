@@ -71,7 +71,7 @@ Bad shaped runner can be fixed by a small electric drill and carving bits.
 Be sure to avoid stringing. Stringing produces bad prints. See [Cura
 Retraction Settings: How to Avoid Stringing](https://all3dp.com/2/cura-retraction-settings-how-to-avoid-stringing/).
 
-In addition custom retraction settings, disabling combing in Travel setting
+In addition to custom retraction settings, disabling combing in Travel setting
 produces better results. See [Travel settings](https://support.ultimaker.com/hc/en-us/articles/360012611299-Travel-settings).
 
 Layer hight should be 0.2 mm. 0.1 mm layer hight produces better prints, but
