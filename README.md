@@ -2,6 +2,10 @@
 
 This repository contains OpenSCAD files from [Mini Drawers Ultimate](https://www.thingiverse.com/thing:1889761).
 
+![House](assets/house.png)
+![Drawer](assets/drawer.png)
+
+
 ## Rationale
 
 Thingiverse does not encourage designers to share original code or files.
