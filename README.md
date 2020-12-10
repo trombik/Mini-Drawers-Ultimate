@@ -61,6 +61,10 @@ required.
 If the defaults do not work for you, `make` variables can be overridden. Or,
 do not use the `Makefile`.
 
+## STL files
+
+The [Releases](releases) page has STL files of the pair in various sizes.
+
 ## Tips
 
 The drawer is very easy to print. The house is more difficult. PLA works fine.
