@@ -65,7 +65,7 @@ do not use the `Makefile`.
 
 ## STL files
 
-The [Releases](releases) page has STL files of the pair in various sizes.
+The [Releases](../../releases) page has STL files of the pair in various sizes.
 
 ## Tips
 
