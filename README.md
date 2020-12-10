@@ -5,6 +5,8 @@ This repository contains OpenSCAD files from [Mini Drawers Ultimate](https://www
 ![House](assets/house.png)
 ![Drawer](assets/drawer.png)
 
+`1x1` is great for through-hole transistors, 8 pin DIP ICs. `2x1` is just
+enough size for through-hole resistors, diodes, and 28 pin DIP ICs.
 
 ## Rationale
 
